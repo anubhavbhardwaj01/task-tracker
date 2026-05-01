@@ -1,6 +1,7 @@
 # railway.toml for BACKEND service
 [build]
 builder = "NIXPACKS"
+buildCommand = "npm ci"
 
 [deploy]
 startCommand = "node server.js"
