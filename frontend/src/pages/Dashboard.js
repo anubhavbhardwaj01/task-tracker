@@ -105,7 +105,7 @@ export default function Dashboard() {
               </tr>
             </thead>
             <tbody>
-              {tasks.map((t) => (
+            {Array.isArray(tasks) && tasks.map((t) => (
                 <tr key={t._id}>
                   <td><span style={{ fontWeight: 600 }}>{t.title}</span></td>
                   <td><span className="text-muted text-sm">{t.project?.name || "—"}</span></td>
