@@ -147,7 +147,7 @@ export default function Projects() {
         </div>
       ) : (
         <div className="projects-grid">
-          {projects.map((p) => (
+          {Array.isArray(projects) && projects.map((p) => (
             <div key={p._id} className="project-card">
               <div className="project-card-header">
                 <h3 className="project-name">{p.name}</h3>

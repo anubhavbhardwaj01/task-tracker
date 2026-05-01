@@ -228,7 +228,11 @@ export default function Tasks() {
         </select>
         <select className="form-select" value={filterProject} onChange={(e) => setFilterProject(e.target.value)}>
           <option value="">All Projects</option>
-          {projects.map((p) => <option key={p._id} value={p._id}>{p.name}</option>)}
+          {Array.isArray(projects) && projects.map((p) => (
+            <option key={p._id} value={p._id}>
+              {p.name}
+            </option>
+          ))}
         </select>
         {isAdmin && (
           <select className="form-select" value={filterUser} onChange={(e) => setFilterUser(e.target.value)}>
