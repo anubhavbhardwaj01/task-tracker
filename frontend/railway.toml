@@ -1,7 +1,7 @@
 # railway.toml for FRONTEND service
 [build]
 builder = "NIXPACKS"
-buildCommand = "NPM_CONFIG_CACHE=/tmp/.npm npm ci && npm run build"
+buildCommand = "npm run build"
 
 [deploy]
 startCommand = "npm run start:prod"
