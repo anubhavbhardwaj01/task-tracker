@@ -1,6 +1,7 @@
 {
   "name": "team-task-manager-backend",
   "version": "1.0.0",
+  "packageManager": "npm@10.9.2",
   "description": "Backend API for Team Task Manager",
   "main": "server.js",
   "scripts": {

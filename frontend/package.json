@@ -1,6 +1,7 @@
 {
   "name": "team-task-manager-frontend",
   "version": "1.0.0",
+  "packageManager": "npm@10.9.2",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
