@@ -269,7 +269,7 @@ export default function Tasks() {
               </tr>
             </thead>
             <tbody>
-              {tasks.map((t) => {
+              {Array.isArray(tasks) && tasks.map((t) => {
                 const overdue = t.dueDate && t.status !== "Done" && isPast(new Date(t.dueDate));
                 return (
                   <tr key={t._id} style={overdue ? { borderLeft: "3px solid var(--red)" } : {}}>
